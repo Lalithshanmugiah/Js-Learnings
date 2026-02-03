@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else</title>
+</head>
+<body>
+    <p id ='else'></p>
+    <script>
+        const hour = new Date().getHours();
+        let greetings;
+
+        if (hour < 18) {
+            greetings ="good day";
+        } else {
+            greetings="good evening";
+        }
+
+        document.getElementById('else').innerHTML=greetings;
+    </script>
+    
+</body>
+</html>
