@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <p id = 'for'></p>
+
+    <script>
+        let students_Name = ['Ramesh','Karthick','Jeeva', "Ramya"];
+        let len = students_Name.length;
+
+        let i = 2;
+
+        let text ="";
+        for (; i<len; i++){
+            text += students_Name[i] + "<br>"
+        }
+
+        document.getElementById("for").innerHTML = text;
+
+    </script>
+    
+</body>
+</html>
