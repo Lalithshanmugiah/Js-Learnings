@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if conditional</title>
+</head>
+<body>
+   <p id="if"></p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("if").innerHTML = "Good day!";
+}
+
+let age =18;
+let vote = ' you are eligible to vote';
+
+if( age <=18){
+    vote = ' you are not eligible to vote';
+}
+
+document.getElementById('if').innerHTML=vote;
+</script>
+</body>
+</html>
