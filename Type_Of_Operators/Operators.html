@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+</head>
+<body>
+    <p id = 'operators'></p>
+    <script>
+        //string are written inside the quotes. can use the single and double quotes
+        let carName1 = 'audix060';
+        let carName2 = 'audix040';
+
+        document.getElementById("operators").innerHTML=carName1 +"<br> "+ carName2;
+
+        //numbers can be written with or without decimals
+        let number1 = 20;
+        let number2 = 5.76;
+        let number3 = 40.00;
+
+        document.getElementById("operators").innerHTML=number1 + "<br>" + number2 + "<br>" + number3;
+
+        //boolean - true or false
+
+        let age = 18;
+
+        document.getElementById('operators').innerHTML = (age==20);
+        document.getElementById('operators').innerHTML = (age>20);
+        document.getElementById('operators').innerHTML = (age<15);
+        document.getElementById('operators').innerHTML = (age!=20);
+
+        //assignment operators
+
+        let x = 20;
+        let y = 30;
+
+        let z = x + y;
+
+        document.getElementById('operators').innerHTML = 'The Total assigned value is ' + z;
+
+        //Multiplication
+
+        let num1 = 20;
+        let num2 = 90;
+
+        let num3 = num1 + num2;
+
+        document.getElementById('operators').innerHTML ='The total number is ' + num3;
+
+        //divition
+
+        let apple = 20;
+        let greenApple = 3;
+
+        let totalApple = apple / greenApple;
+
+        document.getElementById('operators').innerHTML ='the total number of apple remaining over there is ' + totalApple
+
+        //exponentitation
+
+        let m = 6;
+
+        let p = m**2;
+
+        document.getElementById('operators').innerHTML='the exponentional of m is ' + p;
+
+        //remainder
+
+
+        let c = 5;
+        let e = 3;
+
+        let r = c % e;
+
+        document.getElementById('operators').innerHTML=r;
+
+
+        //increment 
+
+
+        let l = 20;
+        l++;
+
+        let s = l;
+
+        document.getElementById('operators').innerHTML =' the increment of L is ' + s;
+
+
+        //decrement 
+
+        let q = 22;
+        q--;
+        
+        let w = q;
+
+        document.getElementById('operators').innerHTML= 'the decrement of Q is ' + w;
+
+
+
+    
+
+
+
+        
+    </script>
+    
+</body>
+</html>
