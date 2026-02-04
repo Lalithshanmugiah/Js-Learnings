@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit to Celsius:</title>
+</head>
+<body>
+  <p id="Celsius"></p>
+
+<script>
+function toCelsius(farenheit) {
+  return (5/9) * (farenheit-32);
+}
+
+let value = toCelsius(77);
+
+document.getElementById("Celsius").innerHTML = "The value is " + value;
+</script>
+    
+</body>
+</html>
