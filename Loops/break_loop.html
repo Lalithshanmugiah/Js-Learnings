@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop Break example</title>
+</head>
+<body>
+    <p id ='loop break'></p>
+
+    <script>
+        const cars = ['BMW','VOLVO','HONDA','FERRARI'];
+        let text ='';
+
+        list:{
+            text += cars[0] + "<br>";
+            text += cars[1] + "<br>";
+            break list;
+            text += cars[2] + "<br>";
+            text += cars[3] + "<br>";
+        }
+
+        document.getElementById("loop break").innerHTML = text;
+
+
+    </script>
+    
+</body>
+</html>
