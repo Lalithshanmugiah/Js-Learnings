@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template strings</title>
+</head>
+<body>
+    <p id = 'template'></p>
+
+    <script>
+        let header = 'template strings';
+        let tags = ['javascript','es6','strings'];
+
+        let html = `<h2> ${header}</h2><ul> `;
+
+            for (const x of tags){
+                html += `<li>${x}</li>`;
+            }
+
+            html += `</ui>`;
+
+            document.getElementById('template').innerHTML=html;
+
+
+    </script>
+    
+</body>
+</html>
