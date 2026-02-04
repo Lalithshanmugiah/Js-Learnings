@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <p id="cons"></p>
+
+<script>
+
+// Constructor function for Person objects
+function Person(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+}
+
+// Create 2 Person objects
+const myFather = new Person("John", "Durai raj", 50,);
+const myMother = new Person("murunalini", "tahur", 48,);
+
+// Display nationality
+document.getElementById("cons").innerHTML =
+"My father is " + myFather.firstName + ". My mother is " + myMother.firstName; 
+</script>
+    
+</body>
+</html>
