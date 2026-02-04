@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object method</title>
+</head>
+<body>
+<p id ='object'></p>
+<script>
+  const person = {
+  firstName: "Lalith",
+  lastName: "shanmugiah",
+  age: 50,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+document.getElementById('object').innerHTML=person.fullName();
+</script>
+    
+</body>
+</html>
