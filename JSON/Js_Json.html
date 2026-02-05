@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+</head>
+<body>
+    <p id ='JSON'></p>
+
+    <script>
+        const person ={
+            name:'lalith',
+            place:'chennai'
+        }
+
+        const textjson = JSON.stringify(person);
+
+        document.getElementById('JSON').innerHTML=textjson;
+    </script>
+    
+</body>
+</html>
