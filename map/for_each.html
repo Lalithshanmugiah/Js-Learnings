@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for each method</title>
+</head>
+<body>
+    <p id ='foreach'></p>
+
+    <script>
+
+        const person = new Map([
+            ['lalith',100],
+            ['shaanmugiah',200],
+            ['mohan',300]
+        ]);
+
+        let text ="";
+        person.forEach(function(value,key){
+            text += key + " = " + value + "<br>"
+        }) 
+
+        document.getElementById("foreach").innerHTML=text;
+    </script>
+    
+</body>
+</html>

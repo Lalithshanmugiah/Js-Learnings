@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Method</title>
+</head>
+<body>
+
+    <p id ='get'></p>
+
+    <script>
+        const students = new Map([
+            ['ram',100],
+            ['lalith',80],
+            ['keerthi',90]
+        ])
+
+        let result = students.get('ram');
+        document.getElementById('get').innerHTML=result;
+    </script>
+    
+</body>
+</html>
