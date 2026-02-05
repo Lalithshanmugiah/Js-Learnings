@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bind Method</title>
+</head>
+<body>
+    <p id ='bind'></p>
+
+    <script>
+        function fullName(){
+            document.getElementById('bind').innerHTML = this.fName + " " + this.lName;
+        }
+        const person = {
+            fName:'lalith',
+            lName:'shanmugiah'
+        }
+        let name =fullName.bind(person);
+        name();
+    </script>
+    
+</body>
+</html>

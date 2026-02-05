@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply method</title>
+</head>
+<body>
+    <p id ='apply'></p>
+
+    <script>
+        const person ={
+            fullName: function(){
+                return this.firstName + this.LastName;
+            }
+        }
+        const person1 ={
+            firstName:'lalith',
+            LastName:'shanmugiah'
+        }
+
+        let name =person.fullName.apply(person1);
+
+        document.getElementById('apply').innerHTML=name;
+    </script>
+    
+</body>
+</html>
