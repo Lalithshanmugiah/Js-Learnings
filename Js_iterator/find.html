@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find method</title>
+</head>
+<body>
+    <p id ='find'></p>
+
+    <script>
+        const myIterator = Iterator.from([2,8,12,16,18]);
+
+        let result = myIterator.find(x => x > 16);
+
+        document.getElementById('find').innerHTML=result;
+
+    </script>
+    
+</body>
+</html>
