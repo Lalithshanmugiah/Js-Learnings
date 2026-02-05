@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Scope</title>
+</head>
+<body>
+<p>Global variable can accessed from anywhere in the script or in the function</p>
+<p id ='global'></p>
+<script>
+    //Global Scope - accessible anywhere
+    let name ='lalith';
+
+    function showMyname(){
+        document.getElementById('global').innerHTML=name;
+    }
+    showMyname();
+</script>
+</body>
+</html>
