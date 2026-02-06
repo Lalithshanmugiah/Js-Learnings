@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <p id ='switch'></p>
+
+    <script>
+
+        let day = 5;
+        let text ='';
+
+        switch(day){
+            case 1: 
+            text="Monday";
+            break;
+            case 2: 
+            text="Tuesday";
+            break;
+            case 3: 
+            text="Wednesday";
+            break;
+            case 4: 
+            text="Thursday";
+            break;
+            case 5: 
+            text="Friday";
+            break;
+            case 6: 
+            text="saturday";
+            break;
+            default:
+            text="invalid day";
+
+        }
+        document.getElementById("switch").innerHTML=text;
+
+
+    </script>
+    
+</body>
+</html>

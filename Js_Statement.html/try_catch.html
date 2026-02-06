@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch</title>
+</head>
+<body>
+    <p id ='try'></p>
+
+    <script>
+        try{
+            let result = x + 10; /// not defined x.
+        } catch (error){
+            document.getElementById('try').innerHTML =error.message;
+        }
+    </script>
+    
+</body>
+</html>
