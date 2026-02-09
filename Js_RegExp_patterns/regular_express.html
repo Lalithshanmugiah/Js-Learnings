@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular_expression</title>
+</head>
+<body>
+    <p>Match everything start with or end with aa or bb</p>
+    <p id ='regular'></p>
+
+    <script>
+        let text ='aaabb';
+        let result = text.match(/(aa)(bb)/d);
+        document.getElementById('regular').innerHTML=result;
+
+
+    </script>
+
+    
+</body>
+</html>
