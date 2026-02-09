@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <p> wait for 4 second to display the output </p>
+    <p id ='settime'></p>
+
+    <script>
+
+        const myTimeout = setTimeout(Greetings, 4000);
+
+        function Greetings(){
+            document.getElementById('settime').innerHTML='Hey Its Timeout'
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
