@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addeventlistenter-Form validation Example</title>
+</head>
+<body>
+
+    <form id ='register_form'>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <p id="nameError"></p>
+
+        <input type="email"  id="email" placeholder="Enter Your Email">
+        <p id="emailError"></p>
+        
+        <button type="submit">Register</button>
+
+
+    </form>
+
+    <script>
+        const form = document.getElementById('register_form');
+        const name = document.getElementById('name');
+        const nameError = document.getElementById('nameError');
+        const email = document.getElementById('email');
+        const emailError = document.getElementById('emailError');
+
+
+        //Realtime name validation
+
+        name.addEventListener("input", function() {
+            if(name.value.length < 3){
+                nameError.innerText="Name must be at least 3 characters";
+                nameError.style.color='red';
+
+            } else {
+                nameError.innerText='';
+            }
+        });
+
+        //Realtime email validation
+
+        email.addEventListener("input", function() {
+            if(!email.value.includes("@")){
+                nameError.innerText='Invalid email address';
+                nameError.style.color='red'
+
+            } else {
+                emailError.innerText='';
+            }
+        });
+
+
+        //Form Submit event
+
+        form.addEventListener("submit",function(){
+            event.preventDefault();
+
+            if(name.value.length >=3 && email.value.includes("@")){
+                alert("Form submitted successfully");
+            }else{
+                alert("Please Fill the Form")
+            }
+        });
+
+
+
+    </script>
+
+    
+</body>
+</html>
