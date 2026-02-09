@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise resolve</title>
+</head>
+<body>
+
+    <p id ='resolve'></p>
+    <script>
+
+        let myPromise = Promise.resolve("All is Well");
+
+        myPromise.then(x => Display(x), x => Display(x));
+
+        function Display(some){
+            document.getElementById("resolve").innerHTML=some;
+        }
+
+    </script>
+    
+</body>
+</html>
