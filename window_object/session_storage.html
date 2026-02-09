@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <p id ='Session'></p>
+
+    <script>
+        sessionStorage.setItem("lastName","Lalith Shanmugiah");
+        let personName = sessionStorage.getItem("lastName");
+        document.getElementById("Session").innerHTML=personName;
+    </script>
+    
+</body>
+</html>
