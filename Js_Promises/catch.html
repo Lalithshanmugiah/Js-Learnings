@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch Promises</title>
+</head>
+<body>
+
+    <p id ='Catch'></p>
+
+    <script>
+
+        let myPromise = new Promise(function(myResolve, myResolve){
+            throw "Error 444";
+
+        });
+
+        myPromise.catch(x => Display(x));
+
+        function Display(cat){
+            document.getElementById('Catch').innerHTML= cat;
+        }
+
+
+    </script>
+    
+</body>
+</html>
