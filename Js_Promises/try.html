@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Function</title>
+</head>
+<body>
+
+    <h3>Age Check</h3>
+
+    <input id ='age' placeholder="Enter Your Age">
+    <button onclick="checkAge()">Check</button>
+
+    <p id ='result'></p>
+
+    <script>
+        function validateAge(age){
+            if(!age){
+                throw new Error ('Age is Reqiured');
+            }
+            if(age < 18){
+                throw new Error ('You Must Be 18+');
+            }
+            return "Access Granted";
+        }
+        function checkAge(){
+            let age = document.getElementById('age').value;
+            let result = document.getElementById('result');
+        
+        Promise.resolve()
+        .then(() => validateAge(age))
+        .then(msg => {
+            result.innerText = msg;
+            result.style.color = "green";
+        })
+        .catch(err => {
+            result.innerText=err.message;
+            result.style.color='red';
+        });
+    }
+    </script>
+    
+</body>
+</html>
