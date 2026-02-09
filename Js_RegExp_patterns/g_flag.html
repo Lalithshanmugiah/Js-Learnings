@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/g (global) flag method</title>
+</head>
+<body>
+    <p>Match every strings rather than stop at first match</p>
+    <p id ='global'></p>
+    
+    <script>
+        let text ='is everything is okay?';
+        let pattern = /is/g;
+        let result = text.match(pattern);
+
+        document.getElementById('global').innerHTML=result;
+
+
+    </script>
+    
+</body>
+</html>
