@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementbyName</title>
+</head>
+<body>
+    <p>fname: <input name="fname" type="text" value="Enter your FName"></p>
+    <p>lname: <input name="lname" type="text" value="Enter your LName"></p>
+    
+    <p id ='name'></p>
+
+
+    <script>
+        
+        let elements = document.getElementsByName("fname");
+        document.getElementById('name').innerHTML=elements[0].tagName;
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
