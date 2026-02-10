@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByTagName</title>
+</head>
+<body>
+    <p>Add Carts</p>
+    <ul>
+        <li>Shampoo</li>
+        <li>soap</li>
+        <li>handwash</li>
+    </ul>
+
+
+    <p id ='tagName'></p>
+
+    <script>
+
+        let tags = document.getElementsByTagName('li');
+        document.getElementById('tagName').innerHTML=tags[0].innerHTML;
+
+
+    </script>
+    
+</body>
+</html>
